@@ -1,18 +1,27 @@
+:root {
+    --ivory: #f2f0f0;
+    --black1: #212621;
+    --green: #485953;
+    --black2: #0b0d0c;
+    --blue: #c4f2ee;
+
+}
+
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 3px;
 }
 
 body {
-    background-color: #d7fdb1;
+    background-color: var(--ivory);
 }
 
-header {
-    padding: 20px;
+header { 
+    padding: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    background-color: var(--green);
+    color: var(--ivory);
 }
 
 h1 {
@@ -21,7 +30,7 @@ h1 {
 }
 
 h1 .Chu {
-    color: #d7fdb1;
+    color: var(--blue);
 }
 
 nav {
@@ -42,10 +51,51 @@ ul li {
 }
 
 a {
-    color: #ffffff;
+    color: var(--ivory);
     text-decoration: none;
 }
 
 p {
     font-size: 16px;
 }
+
+#banner {
+    height: auto;
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 25px;
+}
+
+h2, h4 {
+    font-size: 2rem;
+}
+
+.about-box {
+    float: left;
+}
+
+#headshot {
+    object-fit: contain;
+    float: left;
+    padding: 10px;
+}
+
+.bio-box {
+    float: right
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap:
+  }
+
+.column {
+    display: flex;
+    flex-direction: column
+  }
+
+/* .column2 { 
+    display: flex;
+    flex-direction: column
+  }
