@@ -69,7 +69,12 @@ p {
     height: auto;
     width: 100%;
     object-fit: fill;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+}
+
+main {
+    width: 96%;
+    margin: 2rem auto;
 }
 
 h2, h4 {
@@ -86,8 +91,9 @@ h3, #bio {
     float: left;
     justify-content: space-between;
     display: flex;
-    max-block-size: 50%;
+    /* max-block-size: 50%; */
     height: auto;
+    width: 50%;
 }
 
 #headshot {
@@ -106,38 +112,89 @@ h3, #bio {
     padding: 10px;
     display: flex;
     max-width: 50%;
-    height: 50%;
+    height: auto;
 }
 
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap:
+    flex-wrap: wrap;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    flex: 50%
   }
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+/* .column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    /* transition: flex-basis 500ms linear; */
+    /* margin-bottom: 1.5rem; */
+  /* } */ 
+
+.workbox {
+    float: left;
+    justify-content: space-between;
+    display: flex;
+    /* max-block-size: 50%; */
+    height: auto;
+    width: 100%;
+}
+
+.workbox2 {
+    float: left;
+    justify-content: space-between;
+    display: flex;
+    /* max-block-size: 50%; */
+    height: auto;
+    width: 50%;
 
 .Project1 {
     display: flex;
     max-width: 100%;
     height: auto;
-    padding: 20px;  
+    position: relative;
+    text-align: center;
+    /* padding: 5px; */
+    /* border: solid 2px var(--green);   */
 }
 
-.Projects {
+#Project1 {
+    position: absolute;
+    bottom: 20px;
+    left: 3px;
+    padding: 30px;
+    font-size: 1.25rem;
+    color: var(--blue);
+    border: 2px solid var(--black1);
+    background-color: var(--green);
+}
+
+/* .Projects { */
     display: flex;
     max-width: 50%;
     height: auto;
-    padding: 20px;  
+    position: relative;
+    text-align: center;
+    /* padding: 20px; */
+    /* border: solid 2px var(--green); */  
 }
 
 #covid-image {
     max-width: 100%;
     height: auto;
-    display: flex;  
+    display: flex;
+    object-fit: contain;  
 }
 
 #box-tetris {
@@ -163,3 +220,49 @@ h3, #bio {
     height: auto;
     display: flex; 
 }
+
+footer {
+    background-color: var(--blue);
+    padding: 15px;
+    margin: 20px
+}
+
+h4 {
+    display: inline-flex;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+.contact-info {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+/* @media screen and (min-width: 768px) { */
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    /* .card-column { */
+      /* flex: 0 0 50%; */
+      /* max-width: 50%; */
+    /* } */
+  
+    /* select the last child to grow to full width if it has space to grow */
+    /* .card-column:last-child { */
+      /* flex-grow: 1; */
+    /* } */
+  /* } */
+  
+  /* media query for larger screens */
+  /* @media screen and (min-width: 992px) { */
+    /* header { */
+      /* width: 75%; */
+    /* } */
+  
+    /* .card-column { */
+      /* flex: 0 0 33.333%; */
+      /* max-width: 33.333%; */
+    /* } */
+  /* } */

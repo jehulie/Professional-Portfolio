@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Design Portfolio</title>
     <meta charset="UTF-8" />
@@ -7,104 +8,124 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
   </head>
+ 
   <body>
-    <body>
-        <header>
-            
-            <h1>Julie <span class="Chu">Chu</span></h1>
-
-            <nav role="navigation" aria-label="navigation menu">
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#work">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
         
-        </header>
+    <header>
+            
+        <h1>Julie <span class="Chu">Chu</span></h1>
 
-        <figure>
-            <img id="banner" src="./assets/images/Banner-Warehouse-Ceiling.jpeg">
-        </figure>
+        <nav role="navigation" aria-label="navigation menu">
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>                    
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+    </header>
 
-        <main>
+     <figure>
+        <img id="banner" src="./assets/images/Banner-Warehouse-Ceiling.jpeg">
+    </figure>
 
-            <section class="row" class="about-box">
-                <div class="column" class="headshot">
-                    <h2 id="about">About</h2>
-                    <img id="headshot" src="assets/images/jchu.gif">
-                </div>
+    <main>
 
-                <div class="column" class="bio-box">
+        <section class="row">
+            <div class="column">
+                <figure class="about-box">
+                
+                <h2 id="about">About</h2>
+                <img id="headshot" src="assets/images/jchu.gif">
+            </div> <!--delete this?-->
+
+            <div class="column" class="bio-box"> <!--delete this? move class tags?-->
                 <ul id="bio">
                     <li>Design Experiments for Multimodal Fieldwork.</li>
                     <li> Anthropology for the Web 2.0. </li>
                 </ul>
-                    <!-- <h3 id="bio">Design Experiments for Multimodal Fieldwork.  -->
-                    <!-- <br> -->
-                    <!-- Anthropology for the Web 2.0.  -->
-                <!-- </h3> -->
-                </div> 
-            </section>
+    
+                </figure>
+            </div> 
+        <!-- </section> -->
 
-            <section class="work-box">
+        <!-- <section class="work-box" class="row1">     -->
+            <div class="column1">
+                <figure class=class="Project1">
+                <h2 id="work">Work</h2>   
+                <a href="https://www.fieldguidetologistics.com/">
+                    <img id="covid-image" src="./assets/images/1-Logistics-Covid.png">
+                </a>
+                <h3 id="Project1">#Logistics in the Time of Covid</h3> 
+                </figure> 
+            </div>      
+        <!-- </section> -->
+
+       <div class="work-box2" class="row">
+            <section class="column" class="Projects">
+                    <!-- <figure> -->
+                <a href="https://allegralaboratory.net/un-boxing-fulfillment-a-field-guide-to-logistical-worlds/"> 
+                    <img id="box-tetris" src="./assets/images/2-Box-Tetris.jpg">
+                </a>
+                <h3 id="Project2">Un/boxing Fulfillment</h3>
+                        <!-- </figure> -->
+            </section>
+                    
+            <section class="column" class="Projects">
+                        <!-- <figure> -->
+                <a href="https://roadsides.net/call-for-papers/">
+                    <img id="roadsides-icon" src="./assets/images/3-Roadsides-Icons.jpg">
+                </a>
+                <h3 id="Project3">Roadsides 007</h3>
+                        <!-- </figure> -->
+            </section>    
+        </div>
                 
-                <h2 id="work">Work</h2>    
-                    <div class="column" class="Project1">
-                        <h3 id="Project1">#Logistics in the Time of Covid</h3>
-                        <figure>
-                            <a href="https://www.fieldguidetologistics.com/">
-                                <img id="covid-image" src="./assets/images/1-Logistics-Covid.png">
-                            </a>
-                        </figure>
-                    </div>
-
-                    <div class="column" class="Projects">
-                        <h3 id="Project2">Un/boxing Fulfillment</h3>
-                        <figure>
-                            <a href="https://allegralaboratory.net/un-boxing-fulfillment-a-field-guide-to-logistical-worlds/"> 
-                            <img id="box-tetris" src="./assets/images/2-Box-Tetris.jpg">
-                            </a>
-                        </figure>
-                    </div>
-                    
-                    <div class="column" class="Projects">
-                        <h3 id="Project3">Roadsides 007</h3>
-                        <figure>
-                            <a href="https://roadsides.net/call-for-papers/">
-                            <img id="roadsides-icon" src="./assets/images/3-Roadsides-Icons.jpg">
-                            </a>
-                        </figure>
-                    </div>
-                    
-                    <div class="column" class="Projects">
-                        <h3 id="Project4">Code Refactor</h3>
-                        <figure>
-                            <a href="https://jehulie.github.io/Accessibility-Code-Refactor">
-                            <img id="arsenal-hinges" src="./assets/images/4-Arsenal-Hinges.jpeg">
-                            </a>
-                        </figure>
-                    </div>
-                    
-                    <div class="column" class="Projects">
-                        <h3 id="Project5">Github Profile</h3>
-                        <figure>
-                            <a href="https://jehulie.github.io/prework-about-me/">
-                            <img id="prairie-cranes" src="./assets/images/5-Prairie-Cranes.jpeg">
-                            </a>
-                        </figure>
-                    </div>
-
+        <div class="work-box2" class="row">
+            <section class="column" class="Projects">
+                        <!-- <figure> -->
+                <a href="https://jehulie.github.io/Accessibility-Code-Refactor">
+                    <img id="arsenal-hinges" src="./assets/images/4-Arsenal-Hinges.jpeg">
+                </a>
+                <h3 id="Project4">Code Refactor</h3>
+                        <!-- </figure> -->
             </section>
-                                  
-        </main>
+                    
+            <section class="column" class="Projects">
+            <!-- <figure> -->
+                <a href="https://jehulie.github.io/prework-about-me/">
+                    <img id="prairie-cranes" src="./assets/images/5-Prairie-Cranes.jpeg">
+                </a>
+                <h3 id="Project5">Github Profile</h3>
+            <!-- </figure> -->
+                </section>
+        </div>
+       </section>                           
+    </main>
 
-        <footer>
-            <h4 id="contact">Contact</h3>
-        </footer>
+    <footer>
+        <h4 id="contact">Contact</h4>
+        <section class="contact-info">
+            <ul>
+               <li>
+                   <u>555.555.5555</u>
+                </li>
+                <li>
+                    <u>juliechu@website.com</u>
+                </li>
+                <li>
+                    <u>Twitter</u>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    </body>
+
+</html>
