@@ -21,6 +21,7 @@ body {
     background-color: var(--ivory);
 }
 
+/* The header was inspired by the html / css code for the Unit 1 homework assignment */
 header { 
     padding: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -49,6 +50,7 @@ main {
     padding: 40px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -81,98 +83,99 @@ main {
     margin: 2rem auto;
 }
 
-h2, h4 {
-    font-size: 2rem;
-    color: var(--black2);
-}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+ .about-wrapper {
+     display: flex;
+     flex-wrap: wrap;
+ }
+  
+/* This was inspired by for mobile-first approach in the Unit 2 Advanced CSS Mini Project code */
+.column {
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
 
 h2 {
     padding: 5px;
     margin: 20px 0 0 20px;
-}
-
-h3, #bio {
-    font-size: 1.75rem;
-    color: var(--green);
+    font-size: 2rem;
+    color: var(--black2);
 }
 
 .about-box {
-    /* float: left; */
-    justify-content: space-between;
+    float: left;
+    justify-content: center;
     display: flex;
-    /* max-block-size: 50%; */
+    flex-wrap: wrap;
     /* height: auto; */
     /* width: 50%; */
 }
 
+.headshot {
+    float: left;
+    justify-content: center;
+    display: flex;
+}
+
 .headshot #headshot {
-    object-fit: fill;
-    /* float: left; */
+    object-fit: cover;
+    float: left;
     padding: 10px;
     display: flex;
 }
 
+.bio-box {
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .bio-box #bio {
-    /* float: right; */
-    justify-content: space-between;
+    float: right;
+    text-align: center;
     font-size: 1.5rem;
     margin: 3px;
     padding: 60px 10px 10px 10px;
     display: flex;
 }
 
-/* .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
-
-/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    /* margin-left: -1.5rem;
-    margin-right: -1.5rem; */
-  }
-
-/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-.column {
-    display: flex;
-    flex: 1 0 100%;
-    flex-direction: column;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
-
-/* .workbox { */
-    /* float: left; */
-    /* justify-content: space-between; */
-    /* display: flex; */
-    /* max-block-size: 50%; */
-    /* height: auto; */
-    /* width: 100%; */
+#bio {
+    font-size: 1.75rem;
+    color: var(--green);
 }
 
-/* .workbox2 { */
-    /* float: left; */
-    /* justify-content: space-between; */
-    /* display: flex; */
-    /* max-block-size: 50%; */
-    /* height: auto; */
-    /* width: 50%; */
+/* I'm not sure why the curly bracket in line 162 is keeping the styling in place!  */
+
+}
 
 .Project-Box {
     display: flex;
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    padding: 20px;
+    /* width: 100% */
+    /* height: 100% */
+    /* position: relative; */
+    /* text-align: center; */
+    /* padding: 20px; */
     border: solid 5px var(--green);  
+}
+
+.Project-Box a {
+    display: flex;
+    /* width: 200px */
+    /* height: 200px */
+    /* border: solid 1px var(--black1) */
 }
 
 .Project-Box #Project1 {
@@ -230,49 +233,41 @@ h3, #bio {
     background-color: var(--green);
 }
 
-/* .Projects { */
-    /* display: flex; */
-    /* max-width: 100%; */
-    /* height: auto; */
-    /* position: relative; */
-    /* text-align: center; */
-    /* padding: 20px; */
-    /* border: solid 2px var(--green); */  
-}
-
 .Project-Box #covid-image {
     width: 100%;
-    min-height: 100%;
     display: flex;
     object-fit: cover;  
 }
 
 .Project-Box #box-tetris {
     width: 100%;
-    min-height: 100%;
     display: flex;
     object-fit: cover;  
 }
 
 .Project-Box #roadsides-icon {
     width: 100%;
-    min-height: 100%;
     display: flex; 
     object-fit: cover; 
 }
 
 .Project-Box #arsenal-hinges {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: flex;
     object-fit: cover; 
 }
 
 .Project-Box #prairie-cranes {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     display: flex; 
     object-fit: cover;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: var(--green);
 }
 
 footer {
@@ -285,6 +280,8 @@ h4 {
     display: inline-flex;
     padding: 15px;
     margin-left: 20px;
+    font-size: 2rem;
+    color: var(--black2);
 }
 
 .contact-info {
@@ -295,27 +292,29 @@ h4 {
     font-size: 1.25rem;
 }
 
+/* I ran out of time to get the media query code to work below...will try again! */
+
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
 /* @media screen and (min-width: 768px) { */
     /* on tablets, set columns to only be 50% of the width and not grow */
-    /* .work-wrapper  {
-        flex: 1 0 50%;
-        max-width: 50%;
-        flex-direction: column;
-        padding: 1.5rem;
-        transition: flex-basis 500ms linear;
-        margin-bottom: 1.5rem;
-    } */
+    /* .work-wrapper  { */
+        /* flex: 1 0 50%; */
+        /* max-width: 50%; */
+        /* flex-direction: column; */
+        /* padding: 1.5rem; */
+        /* transition: flex-basis 500ms linear; */
+        /* margin-bottom: 1.5rem; */
+    }
 
-    /* .double-column {
-        display: flex;
-        flex: 2 0 50%;
-        flex-direction: column;
-        padding: 1.5rem;
+    /* .double-column { */
+        /* display: flex; */
+        /* flex: 2 0 50%; */
+        /* flex-direction: column; */
+        /* padding: 1.5rem; */
         /* when the screen resizes, make it so our columns don't jump in size */
-        /* transition: flex-basis 500ms linear;
-        margin-bottom: 1.5rem; */
-      /* } */
+        /* transition: flex-basis 500ms linear; */
+        /* margin-bottom: 1.5rem; */
+     /* }  */
   
     /* select the last child to grow to full width if it has space to grow */
     /* .column:last-child {
