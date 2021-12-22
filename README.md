@@ -10,3 +10,6 @@ Professional porfolio mockup with the following components:
 * When each titled image is clicked, it links to that deployed application
 * Layout of website adapts to viewport
 
+Below are initial mockups of the web pages (for mobile and larger screens):
+![Portfolio Sketch_1](https://user-images.githubusercontent.com/84926007/147050096-cee544a9-9732-4b86-a306-7e8ee6cab8ef.jpg)
+![Portfolio Sketch_2](https://user-images.githubusercontent.com/84926007/147050119-a5059de3-6b26-45c0-b3d8-29c97c81d3da.jpg)
