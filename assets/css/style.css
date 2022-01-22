@@ -1,9 +1,9 @@
 :root {
     --ivory: #f2f0f0;
     --black1: #212621;
-    --green: #485953;
+    --green: #537a6d;
     --black2: #0b0d0c;
-    --blue: #c4f2ee;
+    --blue: #55f0e3;
 
 }
 
@@ -36,10 +36,12 @@ header {
 h1 {
     display: inline-block;
     font-size: 48px;
+    margin-left: 50px;
 }
 
 h1 .Chu {
     color: var(--blue);
+    margin-left: 5px;
 }
 
 nav {
@@ -61,7 +63,7 @@ ul {
 
 ul li {
     display: inline-block;
-    /* margin-left: 25px; */
+    margin-bottom: 20px;
 }
 
 a {
@@ -97,6 +99,7 @@ main {
  .about-wrapper {
      display: flex;
      flex-wrap: wrap;
+     margin-bottom: 40px;
  }
   
 /* This was inspired by for mobile-first approach in the Unit 2 Advanced CSS Mini Project code */
@@ -114,6 +117,7 @@ h2 {
     margin: 20px 0 0 20px;
     font-size: 2rem;
     color: var(--black2);
+    font-weight: bolder;
 }
 
 .about-box {
@@ -121,18 +125,9 @@ h2 {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    /* height: auto; */
-    /* width: 50%; */
 }
 
-/* .headshot {
-    float: left;
-    justify-content: center;
-    display: flex;
-} */
-
 .headshot #headshot {
-    /* object-fit: cover; */
     float: left;
     padding: 10px;
     display: flex;
@@ -153,17 +148,20 @@ h2 {
     margin: 3px;
     padding: 20px 10px 10px 10px;
     display: flex;
+    font-weight: bold;
 }
 
 #bio {
     font-size: 1.75rem;
-    color: var(--green);
+    color: var(--black2);
     padding-top: 10px;
+    margin-top: 20px;
 }
 
 /* I'm not sure why the curly bracket in line 162 is keeping the styling in place!  */
 
 }
+
 
 .Project-Box {
     display: flex;
@@ -177,6 +175,7 @@ h2 {
 
 .Project-Box a {
     display: flex;
+    margin-top: 20px;
     /* width: 200px */
     /* height: 200px */
     /* border: solid 1px var(--black1) */
@@ -296,63 +295,15 @@ h4 {
     font-size: 1.25rem;
 }
 
-/* I ran out of time to get the media query code to work below...will try again! */
+/* Adding blur to background image on results page */
+.blur {
+    /* // Make sure this color has an opacity of less than 1 */
+    background: rgba(244, 252, 228, 0.2);
+    backdrop-filter: blur(3px);
+} 
 
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-/* @media screen and (min-width: 768px) { */
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    /* .work-wrapper  { */
-        /* flex: 1 0 50%; */
-        /* max-width: 50%; */
-        /* flex-direction: column; */
-        /* padding: 1.5rem; */
-        /* transition: flex-basis 500ms linear; */
-        /* margin-bottom: 1.5rem; */
-    }
-
-    /* .double-column { */
-        /* display: flex; */
-        /* flex: 2 0 50%; */
-        /* flex-direction: column; */
-        /* padding: 1.5rem; */
-        /* when the screen resizes, make it so our columns don't jump in size */
-        /* transition: flex-basis 500ms linear; */
-        /* margin-bottom: 1.5rem; */
-     /* }  */
-  
-    /* select the last child to grow to full width if it has space to grow */
-    /* .column:last-child {
-      flex-grow: 1;
-    }
-  }
-   */
-  /* media query for larger screens */
-  /* @media screen and (min-width: 992px) { */
-    /* header { */
-      /* width: 75%; */
-    /* } */
-  
-    /* .column { */
-      /* flex: 0 0 50%; */
-      /* max-width: 50%; */
-    /* } */
-
-    /* .work-wrapper  { */
-        /* flex: 1 0 50%;
-        max-width: 100%;
-        flex-direction: column;
-        padding: 1.5rem;
-        transition: flex-basis 500ms linear;
-        margin-bottom: 1.5rem;
-      } */
-
-    /* .double-column {
-        display: flex;
-        flex: 2 0 50%;
-        flex-direction: column;
-        padding: 1.5rem;
-        /* when the screen resizes, make it so our columns don't jump in size */
-        /* transition: flex-basis 500ms linear;
-        margin-bottom: 1.5rem; */
-      /* } */
-  /* } */
+.blur2 {
+    /* // Make sure this color has an opacity of less than 1 */
+    background: rgba(244, 252, 228, 0.4);
+    backdrop-filter: blur(10px);
+} 
